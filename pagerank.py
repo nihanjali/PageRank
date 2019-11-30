@@ -43,6 +43,9 @@ def __euclideanNorm(series):
     return math.sqrt(series.dot(series))
 
 # PageRank specific functionality:
+def trustScore(result)
+    newScore=result*trustScore
+    return newScore
 
 def __startState(nodes):
     if len(nodes) == 0: raise ValueError("There must be at least one node.")
@@ -51,7 +54,8 @@ def __startState(nodes):
 
 def __integrateRandomSurfer(nodes, transitionProbabilities, rsp):
     alpha = 1.0 / float(len(nodes)) * rsp
-    return transitionProbabilities.copy().multiply(1.0 - rsp) + alpha
+    result=transitionProbabilities.copy().multiply(1.0 - rsp) + alpha
+    return result
 
 def powerIteration(transitionWeights, rsp=0.15, epsilon=0.00001, maxIterations=1000):
     # Clerical work:
